@@ -1,0 +1,136 @@
+$cellDimensions:40px;
+
+.react-datepicker__month-container{
+  border: 2px solid #EBECF0 !important;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #26334d08;
+}
+
+.react-datepicker__aria-live{
+  display: none;
+}
+
+.react-datepicker{
+  font-family: "Fopen Midi Black", sans-serif !important;
+  font-size: 12px !important;
+  border: none !important;
+  position: relative;
+}
+
+div{
+  text-align: center !important;
+  line-height: 20px !important;
+}
+
+.react-datepicker__navigation{
+  &--previous{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 2px;
+    top: 13px !important;
+    background: url("../../../../assets/icons/ArrowToLeft.svg") !important;
+  }
+  &--next{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 2px;
+    top: 13px !important;
+    background: url("../../../../assets/icons/ArrowToRight.svg") !important;
+  }
+  &-icon{
+    display: none;
+  }
+}
+
+.react-datepicker__header {
+  background: white !important;
+  border-bottom: unset !important;
+  padding: 0 !important;
+}
+.react-datepicker__day-names{
+  display: flex!important;
+  margin-bottom: 0 !important;
+}
+
+.react-datepicker__day-name{
+  border: solid #EBECF0 !important;
+  border-width: 2px 2px 0 0 !important;
+  margin: unset !important;
+  text-transform: uppercase;
+  padding: 10px 0 !important;
+  width: $cellDimensions !important;
+  height: $cellDimensions !important;
+  color: #8C99B3 !important;
+  &:first-child {
+    border: solid #EBECF0 !important;
+    border-width: 2px 2px 0 0 !important;
+  }
+  &:last-child {
+    border: solid #EBECF0 !important;
+    border-width: 2px 0 0 0 !important;
+  }
+}
+
+.react-datepicker__today-button{
+  display: none !important;
+}
+
+.react-datepicker__current-month{
+  padding: 15px 0 !important;
+  color: #4D5E80 !important;
+}
+
+.react-datepicker__month{
+  margin: unset !important;
+}
+
+.react-datepicker__week{
+  display: flex;
+}
+
+.react-datepicker__day{
+  margin: unset !important;
+  width: $cellDimensions !important;
+  height: $cellDimensions !important;
+  border: solid #EBECF0 !important;
+  padding: 10px 0 !important;
+  border-width: 2px 2px 0 0 !important;
+  color: #4D5E80 !important;
+  cursor: pointer;
+  position: relative;
+  &:first-child {
+    border: solid #EBECF0 !important;
+    border-width: 2px 2px 0 0 !important;
+  }
+  &:last-child {
+    border: solid #EBECF0 !important;
+    border-width: 2px 0 0 0 !important;
+  }
+  &:hover{
+    width: $cellDimensions !important;
+    border-radius: unset !important;
+    border: solid #3361FF !important;
+    border-width: 2px 2px 0 0 !important;
+  }
+}
+
+.react-datepicker__day--today{
+  border-radius: unset !important;
+  color: #3361FF !important;
+}
+
+.react-datepicker__day--selected{
+  border-radius: unset !important;
+  background: #3361FF !important;
+  color: white !important;
+}
+
+.react-datepicker__day--outside-month{
+  color: #8C99B3 !important;
+}
+
+.react-datepicker__day--disabled {
+  color: #8C99B3 !important;
+}
