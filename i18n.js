@@ -12,10 +12,10 @@ i18n.use(initReactI18next).init({
       translation: translationUA,
     },
   },
-  lng: "en", // Устанавливаем язык по умолчанию
-  fallbackLng: "en", // Язык по умолчанию, если нет соответствующих переводов
+  lng: "en",
+  fallbackLng: "en",
   interpolation: {
-    escapeValue: false, // Необходимо для интерполяции react
+    escapeValue: false,
   },
 });
 

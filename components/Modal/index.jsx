@@ -4,12 +4,6 @@ import Button from "../Button";
 import { Colors } from "../../constants/colors";
 
 const MyModal = ({ children, visible, onClose }) => {
-  useEffect(() => {
-    return () => {
-      // Выполните необходимые действия при закрытии модального окна
-    };
-  }, []);
-
   return (
     <Modal
       visible={visible}

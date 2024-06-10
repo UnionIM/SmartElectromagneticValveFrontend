@@ -13,7 +13,7 @@ const MyConnectionProvider = ({ children }) => {
 
   useEffect(() => {
     setConnection({
-      connection: true, //TODO: change it
+      connection: false,
       isLoading: isLoading,
     });
   }, [data, isLoading]);
